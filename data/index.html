@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Turret</title>
+    </head>
+    <body>
+        <h1>Turret Controller</h1>
+        <p id="socket-state"><br></p>
+		<p id="control-state"><br></p>
+		
+        <div id="joyDiv"></div><br>
+        
+        <button id="relay-1" class="button-switch button-switch-disabled">Relay 1</button>
+        <button id="relay-2" class="button-switch button-switch-disabled">Relay 2</button><br>
+			
+		<select id="animation-select">
+			<option value="sweep-horizontal">Horizontal</option>
+			<option value="sweep-vertical">Vertical</option>
+			<option value="sweep-diagonal-lr">Diagonal (L-R)</option>
+			<option value="sweep-diagonal-rl">Diagonal (R-L)</option>
+			<option value="circle">Circle</option>
+		</select><br>
+		<button id="animation-toggle" class="button-switch button-switch-disabled">Animation toggle</button>
+		
+        <script src="joy.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
